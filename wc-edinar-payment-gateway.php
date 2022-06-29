@@ -36,7 +36,7 @@ if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins',
 	 public function __construct() {
 			
 			$this->id = 'edinar';
-      $this->icon = 'https://www.klap.tn/wp-content/uploads/2022/04/logo-edinar.png'; 
+      $this->icon = 'uploads/2022/04/logo-edinar.png'; 
 			$this->has_fields = false;
 			$this->method_title = 'Paiement carte Edinar';
 			$this->method_description = 'Redirige le client vers le portail de paiement Edinar';
@@ -90,14 +90,14 @@ if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins',
 					'title'			=> 'URL Edinar',
 					'type'			=> 'text',
 					'description'	=> 'URL Edinar',
-					'default'		=> 'https://www.klap.tn/cgi-bin/edinar/transact.cgi',
+					'default'		=> '/cgi-bin/edinar/transact.cgi',
 					'desc_tip'		=> true,
 				),
 				'secretkey'		=> array(
 					'title'			=> 'Clé secrète',
 					'type'			=> 'password',
 					'description'	=> 'Clé sercète fournie par Edinar',
-					'default'		=> 'ondpPROD$17*1',
+					'default'		=> '',
 					'desc_tip'		=> true,
 				),
 				'keyversion'	=> array(
@@ -111,7 +111,7 @@ if ( ! in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins',
 					'title'			=> 'Code marchand',
 					'type'			=> 'text',
 					'description'	=> 'Code marchand de la boutique sur Edinar',
-					'default'		=> '***0106008',
+					'default'		=> '******',
 					'desc_tip'		=> true,
 				),
 				'transPrefix'	=> array(
